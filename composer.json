@@ -1,0 +1,5 @@
+{
+	"require": {
+		"sybio/gif-creator": "1.0.0"
+    }
+}
