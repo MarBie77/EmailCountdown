@@ -1,5 +1,5 @@
 # emailcounter
-Just a simple script to generate a countdown GIF animation inside an email
+Just a simple PHP script to generate a countdown GIF animation inside an email
 
 ## Parameters
 1. dest_time (format: ddmmyyyyhhmi)
