@@ -1,5 +1,25 @@
 {
+    "name": "marbie77/emailcountdown",
+    "version": "1.0.0",
+    "type": "library",
+    "description": "Email Countdown class to generate GIF",
+    "keywords": ["email","countdown"],
+    "homepage": "https://github.com/MarBie77/EmailCountdown",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Martin Biermair",
+            "role": "Developer"
+        }
+    ],
 	"require": {
+	    "php": ">=5.3.0",
+	    "ext-gd": "*",
 		"sybio/gif-creator": "1.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "EmailCountdown\\": "src/"
+        }
     }
 }
