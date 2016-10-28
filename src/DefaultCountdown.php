@@ -12,7 +12,7 @@ class DefaultCountdown
 
     protected $_height = 100;
 
-    protected $_font_file = 'fonts/ARIAL.TTF';
+    protected $_font_file = __DIR__ . '/../fonts/ARIAL.TTF';
 
     // 100 ticks in gif -> 1 second in realtime
     protected $_gif_ticks = 100;
