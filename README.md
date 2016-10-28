@@ -13,7 +13,7 @@ The image itself works with Outlook, but it shows only the first frame of the GI
 2. setCircleForegroundColor($circle_foreground_color) (default: FF0000)
 
 ## Installation
-[Install Composer](https://getcomposer.org) and use it to install dependencies
+Use [Composer](https://getcomposer.org) to install it
 ```
 composer require marbie77/emailcountdown
 ```
