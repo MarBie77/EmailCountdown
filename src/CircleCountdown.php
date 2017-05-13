@@ -24,7 +24,7 @@ class CircleCountdown extends DefaultCountdown
 
     public function setCircleBackgroundColor($circle_background_color)
     {
-        if (! empty($circle_background_color) && preg_match('[0-9a-fA-F]{6}', $circle_background_color) == 1) {
+        if (! empty($circle_background_color) && preg_match('/[0-9a-fA-F]{6}/', $circle_background_color) == 1) {
             $this->_circle_background_color = self::convertHexToRGB($circle_background_color);
         }
         return $this;
@@ -32,7 +32,7 @@ class CircleCountdown extends DefaultCountdown
 
     public function setCircleForegroundColor($circle_foreground_color)
     {
-        if (! empty($circle_foreground_color) && preg_match('[0-9a-fA-F]{6}', $circle_foreground_color) == 1) {
+        if (! empty($circle_foreground_color) && preg_match('/[0-9a-fA-F]{6}/', $circle_foreground_color) == 1) {
             $this->_circle_foreground_color = self::convertHexToRGB($circle_foreground_color);
         }
         return $this;
