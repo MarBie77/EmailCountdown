@@ -300,6 +300,7 @@ class DefaultCountdown
      * get the fake countdown as gif
      *
      * @return string
+     * @throws \Exception
      */
     public function getGIFAnimation()
     {

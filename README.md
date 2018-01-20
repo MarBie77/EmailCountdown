@@ -24,7 +24,11 @@ header('Cache-Control: post-check=0, pre-check=0', false);
 header('Pragma: no-cache');
 echo $emailCountdown->getGIFAnimation();
 ```
-See the _example.php_ or _example_wallpoet.php_
+
+## Examples
+To check the examples, first install dependencies with ```composer install```
+
+Then navigate to _example.php_ or _example_wallpoet.php_
 
 ## Changelog
 
