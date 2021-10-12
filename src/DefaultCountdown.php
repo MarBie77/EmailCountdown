@@ -7,7 +7,7 @@ use GifCreator\GifCreator;
 class DefaultCountdown
 {
     /** @var int we create only 60 frames/seconds to create the fake counter */
-    const MAX_FRAMES = 60;
+    protected $maxFrames = 60;
 
     /** @var int currently fixed, if changed to dynamic size, don't forget to change the
      * positioning below! */
@@ -307,7 +307,7 @@ class DefaultCountdown
         $frames = [];
         $current_time = new \DateTime();
 
-        for ($i = 0; $i < self::MAX_FRAMES; $i++) {
+        for ($i = 0; $i < $this->maxFrames; $i++) {
             if ($current_time > $this->destinationTime) {
                 $seconds = $minutes = $hours = $days = 0;
             } else {
@@ -362,6 +362,18 @@ class DefaultCountdown
     public function setShowTextLabel(bool $showTextLabel)
     {
         $this->showTextLabel = $showTextLabel;
+        return $this;
+    }
+
+    /**
+     * set max frames
+     *
+     * @param int $maxFrames
+     * @return $this
+     */
+    public function setMaxFrames(int $maxFrames)
+    {
+        $this->maxFrames = $maxFrames;
         return $this;
     }
 }
