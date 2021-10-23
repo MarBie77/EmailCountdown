@@ -49,5 +49,4 @@ local.properties
 # Code Recommenders
 .recommenders/
 vendor/
-composer.lock
 .idea

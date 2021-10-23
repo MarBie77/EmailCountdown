@@ -32,6 +32,9 @@ Then navigate to _example.php_ or _example_wallpoet.php_
 
 ## Changelog
 
+2.1.0 
+* adding PR for setting max frames from simoheinonen
+
 2.0.1 
 * adding new function to customize shown text and position
 * adding font Wallpoet-Regular to show additional example (example_wallpoet.php)
