@@ -254,16 +254,16 @@ class DefaultCountdown
         if ($this->showTextLabel) {
 
             $daysLabelBBox = imagettfbbox($this->textData['days']['labelSize'], 0, $this->fontFile, $this->textData['days']['label']);
-            $daysLabelPositionX = $this->textData['days']['labelPositionX'] - ($daysLabelBBox [4] / 2);
+            $daysLabelPositionX = round($this->textData['days']['labelPositionX'] - ($daysLabelBBox [4] / 2));
 
             $hoursLabelBBox = imagettfbbox($this->textData['hours']['labelSize'], 0, $this->fontFile, $this->textData['hours']['label']);
-            $hoursLabelPositionX = $this->textData['hours']['labelPositionX'] - ($hoursLabelBBox [4] / 2);
+            $hoursLabelPositionX = round($this->textData['hours']['labelPositionX'] - ($hoursLabelBBox [4] / 2));
 
             $minutesLabelBBox = imagettfbbox($this->textData['minutes']['labelSize'], 0, $this->fontFile, $this->textData['minutes']['label']);
-            $minutesLabelPositionX = $this->textData['minutes']['labelPositionX'] - ($minutesLabelBBox [4] / 2);
+            $minutesLabelPositionX = round($this->textData['minutes']['labelPositionX'] - ($minutesLabelBBox [4] / 2));
 
             $secondsLabelBBox = imagettfbbox($this->textData['seconds']['labelSize'], 0, $this->fontFile, $this->textData['seconds']['label']);
-            $secondsLabelPositionX = $this->textData['seconds']['labelPositionX'] - ($secondsLabelBBox [4] / 2);
+            $secondsLabelPositionX = round($this->textData['seconds']['labelPositionX'] - ($secondsLabelBBox [4] / 2));
 
             imagettftext($frame, $this->textData['days']['labelSize'], 0, $daysLabelPositionX,
                 $this->textData['days']['labelPositionY'], $text_color,
