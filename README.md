@@ -32,8 +32,11 @@ Then navigate to _example.php_ or _example_wallpoet.php_
 
 ## Changelog
 
+2.1.1
+* adding PR for removing deprecation messages from @simoheinonen
+
 2.1.0 
-* adding PR for setting max frames from simoheinonen
+* adding PR for setting max frames from @simoheinonen
 
 2.0.1 
 * adding new function to customize shown text and position

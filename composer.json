@@ -1,6 +1,6 @@
 {
     "name": "marbie77/emailcountdown",
-    "version": "2.1.0",
+    "version": "2.1.1",
     "type": "library",
     "description": "Email Countdown class to generate GIF",
     "keywords": ["email","countdown"],
